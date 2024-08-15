@@ -25,8 +25,9 @@ To follow the complete procedure, you can refer to my tutorial [here](https://gi
 
 - Upload chest X-ray images into two categories: `Normal` and `Pneumonia`.
 - Click the `Train Model` button. The platform will train the model to recognize patterns in the X-ray images that correspond to either healthy lungs or pneumonia.
-- You can see my training parameters in the image below
-![Results](/Pictures/image.png)
+- You can see my training parameters in the image below:
+
+  ![Results](/Pictures/image.png)
 
 ### 4. Export the Model
 
@@ -38,11 +39,26 @@ To follow the complete procedure, you can refer to my tutorial [here](https://gi
 
 - Install the required libraries:
 
-  ```bash
-  pip install tensorflow opencv-python numpy
-  
+    ```bash
+    pip install tensorflow opencv-python numpy
+    ```
+
 - Enter the correct paths for the model files, labels.txt, and the video on which you want to perform inference.
 
-- Enter the following command to run the script
-```bash
-  python main.py
+- Enter the following command to run the script:
+
+    ```bash
+    python main.py
+    ```
+
+### 6. Results
+
+- In this project, the trained model was used to detect pneumonia in pediatric patients through X-ray images. Our inference was performed on a video demonstrating the model's capability to identify pneumonia from X-ray frames.
+
+- You can watch the inference demonstration in this video: [Inference Video](https://www.youtube.com/watch?v=HTwT0GTBgdI&pp=ygUfUGVkaWF0cmljIFBuZXVtb25pYSBDaGVzdCBYLXJheQ%3D%3D).
+
+- Additionally, a sample video on which the inference was run can be found in this repository.
+
+### Importance of This Project
+
+Pneumonia is a leading cause of morbidity and mortality among children, particularly in low-resource settings where diagnostic tools are limited. This project contributes to the healthcare field by providing a machine learning model that can assist in the early detection of pneumonia, potentially leading to timely and life-saving treatment. The use of automated diagnostic tools like this can bridge the gap in healthcare accessibility and improve outcomes for pediatric patients worldwide.
